@@ -1,0 +1,12 @@
+123abc! This has both numbers and letters together.
+Let's see how contractions like don't, shouldn't, and it's are handled.
+How about special characters like @, #, %, &, *? These shouldn't count.
+This line has a URL: https://example.com and an email: user@example.com.
+Complex-hyphenated words like state-of-the-art, mother-in-law, and user-friendly.
+Numbers like 12345 or mixed ones like 12abc34def shouldn't be considered valid.
+Random symbols: $100, €500, and £200. Should any of these be valid?
+Nested punctuation: (this, that, and [something else])—let's test this case.
+A mix of digits and words: the quick brown fox jumps over 123 lazy dogs.
+Short words: a, I, it, to, up—these should not be considered as valid tokens.
+And finally, what about ellipses... and dashes—should they be ignored?
+

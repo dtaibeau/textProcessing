@@ -1,0 +1,23 @@
+Don't worry about the driver-partner!
+
+
+Line 1: Hello! This is a test-text file with hyphens, apostrophes, and other symbols.
+Line 2: Don't worry about errors — we'll handle them! Let's see how it works.
+Line 3: The driver-partner checked-in at 3:45 p.m. and was ready-to-go.
+Line 4: Wait, is that even possible?! Well... let's check.
+Line 5: Numbers like 12345 or single digits like 5 should not be considered valid tokens.
+Line 6: What about contractions? For example: she's, it's, they're.
+Line 7: Hyphenated words like well-being and state-of-the-art should be counted as one token.
+Line 8: Apostrophes' removal should leave behind clean tokens without any weird characters.
+Line 9: Sentences with commas, periods, exclamation marks! and question marks?
+Line 10: $100 and #hashtags shouldn't be counted. What about this: email@example.com?
+Line 11: URLs like https://example.com shouldn't count either.
+Line 12: Here's another tricky one: 3-year-old boy.
+Line 13: Single letters such as A, B, C are not valid tokens.
+Line 14: What happens with... ellipses... and lots---of dashes?!
+Line 15: We shouldn't see any special characters like @, %, &, or * in the tokens.
+Line 16: Parentheses (like these) should be ignored, as should square brackets [like these].
+Line 17: Nested punctuation?! Yeah, let's handle that, too—hopefully it works.
+Line 18: Multi-sentence lines should split: This. Is. A. Test.
+Line 19: Odd characters, like “quotes” and ‘apostrophes’, can be tricky.
+Line 20: Finally, let's handle whitespace     correctly.
