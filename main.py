@@ -4,7 +4,7 @@ from loguru import logger
 import re
 
 
-filepath = "test_file2.txt"
+filepath = "test_file3.txt"
 
 def isValidToken(token: str) -> bool:
     logger.info(f"Processing token: {token}")
@@ -24,14 +24,11 @@ def isValidToken(token: str) -> bool:
 
     cleaned_token = ''.join(char for char in token if char.isalnum())
     
-    if cleaned_token.isdigit():
-        return cleaned_token
-    
-    # validate
-    if len(cleaned_token) > 3:
+    if cleaned_token.isascii() and cleaned_token.isalnum() and len(cleaned_token) > 3:
+        logger.info(f"Valid token: {cleaned_token}")
         return cleaned_token
     else:
-        logger.info(f"Invalid token (either too short or empty): {cleaned_token}")
+        logger.info(f"Invalid or non-ASCII/alphanumeric token: {cleaned_token}")
         return ""
 
 
@@ -67,6 +64,9 @@ def tokenize(filepath: str) -> List[str]:
     return tokens
 
 
+if __name__ == "__main__":
+    tokenized_file = tokenize(filepath)
+    print(tokenized_file)
 if __name__ == "__main__":
     tokenized_file = tokenize(filepath)
     print(tokenized_file)
